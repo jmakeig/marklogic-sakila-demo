@@ -1,0 +1,11 @@
+bin/
+build/
+.classpath
+.project
+.gradle
+.settings
+node_modules
+src/main/resources/static
+src/main/resources/templates
+*.idea
+*.iml
