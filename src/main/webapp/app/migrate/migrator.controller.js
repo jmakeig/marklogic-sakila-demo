@@ -14,11 +14,12 @@
         jdbcUsername: 'root',
         jdbcPassword: 'admin',
         sql: '',
-        rootLocalName: ''
+        rootLocalName: '',
+        collections: 'sakila'
       },
       submit: submit
     });
-    
+
     function submit() {
       ctrl.receipt = null;
       $http(

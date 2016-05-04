@@ -9,8 +9,17 @@ public class MigrateData {
 
     private String sql;
     private String rootLocalName;
+	private String collections;
 
-    public String getJdbcDriver() {
+	public String getCollections() {
+		return collections;
+	}
+
+	public void setCollections(String collections) {
+		this.collections = collections;
+	}
+
+	public String getJdbcDriver() {
         return jdbcDriver;
     }
 

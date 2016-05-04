@@ -1,14 +1,51 @@
 {
-  "database-name" : "%%DATABASE%%",
-  "triggers-database": "%%TRIGGERS_DATABASE%%",
-  "word-lexicon": ["http://marklogic.com/collation/"], 
-  "collection-lexicon": true,
-  "range-element-index" : [ {
-    "scalar-type" : "string",
-    "namespace-uri" : "CHANGEME",
-    "localname" : "CHANGEME",
-    "collation" : "http://marklogic.com/collation/",
-    "range-value-positions" : false,
-    "invalid-values" : "reject"
-  } ]
+	"database-name": "%%DATABASE%%",
+	"triggers-database": "%%TRIGGERS_DATABASE%%",
+	"schema-database": "%%SCHEMAS_DATABASE%%",
+	"word-lexicon": [
+		"http://marklogic.com/collation/"
+	],
+	"collection-lexicon": true,
+	"range-element-index": [
+		{
+			"scalar-type": "string",
+			"namespace-uri": "",
+			"localname": "film_id",
+			"collation": "http://marklogic.com/collation/",
+			"range-value-positions": false,
+			"invalid-values": "reject"
+		},
+		{
+			"scalar-type": "string",
+			"namespace-uri": "",
+			"localname": "title",
+			"collation": "http://marklogic.com/collation/",
+			"range-value-positions": false,
+			"invalid-values": "reject"
+		},
+		{
+			"scalar-type": "string",
+			"namespace-uri": "",
+			"localname": "rating",
+			"collation": "http://marklogic.com/collation/",
+			"range-value-positions": false,
+			"invalid-values": "reject"
+		},
+		{
+			"scalar-type": "string",
+			"namespace-uri": "",
+			"localname": "category",
+			"collation": "http://marklogic.com/collation/",
+			"range-value-positions": false,
+			"invalid-values": "reject"
+		},
+		{
+			"scalar-type": "int",
+			"namespace-uri": "",
+			"localname": "length",
+			"collation": "",
+			"range-value-positions": false,
+			"invalid-values": "reject"
+		}
+	]
 }

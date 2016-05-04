@@ -10,19 +10,19 @@
         <form method="post">
           <h4>JDBC Details</h4>
           <div class="form-group">
-            <label for="jdbcDriver">Driver class name</label> 
+            <label for="jdbcDriver">Driver class name</label>
             <input id="jdbcDriver" type="text" class="form-control" ng-model="ctrl.inputs.jdbcDriver" />
           </div>
           <div class="form-group">
-            <label for="jdbcUrl">Database URL</label> 
+            <label for="jdbcUrl">Database URL</label>
             <input id="jdbcUrl" type="text" class="form-control" ng-model="ctrl.inputs.jdbcUrl" />
           </div>
           <div class="form-group">
-            <label for="jdbcUsername">Username</label> 
+            <label for="jdbcUsername">Username</label>
             <input id="jdbcUrl" type="text" class="form-control" ng-model="ctrl.inputs.jdbcUsername" />
           </div>
           <div class="form-group">
-            <label for="jdbcPassword">Password</label> 
+            <label for="jdbcPassword">Password</label>
             <input id="jdbcPassword" type="password" class="form-control" ng-model="ctrl.inputs.jdbcPassword" />
           </div>
           <h4>SQL Query</h4>
@@ -36,9 +36,13 @@
             <textarea id="sql" rows="5" cols="60" class="form-control" ng-model="ctrl.inputs.sql"></textarea>
           </div>
           <div class="form-group">
-            <label for="rootLocalName">XML Root Element</label> 
+            <label for="rootLocalName">XML Root Element</label>
             <input id="rootLocalName" type="text" class="form-control" ng-model="ctrl.inputs.rootLocalName" />
           </div>
+					<div class="form-group">
+						<label for="collections">Collections</label>
+						<input id="collections" type="text" class="form-control" ng-model="ctrl.inputs.collections" />
+					</div>
           <button class="btn btn-primary" ng-click="ctrl.submit()">Submit</button>
         </form>
       </div>

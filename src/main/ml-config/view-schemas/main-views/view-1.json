@@ -1,0 +1,47 @@
+{
+   "view-name": "films",
+   "schema-name": "main",
+   "element-scope": {"namespace-uri":"", "localname":"film"},
+   "column": [
+     {
+       "column-name": "film_id",
+       "element-reference": {
+          "namespace-uri": "",
+          "localname": "film_id",
+          "scalar-type": "string"
+       }
+     },
+     {
+       "column-name": "title",
+       "element-reference": {
+          "namespace-uri": "",
+          "localname": "title",
+          "scalar-type": "string"
+       }
+     },
+     {
+       "column-name": "rating",
+       "element-reference": {
+          "namespace-uri": "",
+          "localname": "rating",
+          "scalar-type": "string"
+       }
+     },
+     {
+       "column-name": "category",
+       "element-reference": {
+          "namespace-uri": "",
+          "localname": "category",
+          "scalar-type": "string"
+       }
+     },
+     {
+       "column-name": "length",
+       "element-reference": {
+          "namespace-uri": "",
+          "localname": "length",
+          "scalar-type": "int"
+       }
+     }
+   ]
+ }

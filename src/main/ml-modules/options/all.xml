@@ -71,4 +71,32 @@
       </transform-results>
     </state>
   </operator>
+
+	<constraint name="category">
+		<range type="xs:string" facet="true">
+			<facet-option>limit=10</facet-option>
+			<facet-option>frequency-order</facet-option>
+			<facet-option>descending</facet-option>
+			<element ns="" name="category" />
+		</range>
+	</constraint>
+
+	<constraint name="rating">
+		<range type="xs:string" facet="true">
+			<facet-option>limit=10</facet-option>
+			<facet-option>frequency-order</facet-option>
+			<facet-option>descending</facet-option>
+			<element ns="" name="rating" />
+		</range>
+	</constraint>
+
+	<constraint name="length">
+		<range type="xs:int" facet="true">
+			<bucket name="Less than 90" lt="90">Less than 90</bucket>
+			<bucket name="Between 90 and 120" ge="91" lt="121">Between 90 and 120</bucket>
+			<bucket name="More than 120" ge="121">More than 120</bucket>
+			<element ns="" name="length" />
+		</range>
+	</constraint>
+
 </options>
