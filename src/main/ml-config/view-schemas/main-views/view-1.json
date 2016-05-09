@@ -35,6 +35,14 @@
           "scalar-type": "string"
        }
      },
+		 {
+			 "column-name": "language",
+			 "element-reference": {
+				 "namespace-uri": "",
+				 "localname": "language",
+				 "scalar-type": "string"
+			 }
+		 },
      {
        "column-name": "length",
        "element-reference": {

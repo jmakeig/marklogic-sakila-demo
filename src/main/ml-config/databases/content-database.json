@@ -40,6 +40,14 @@
 			"invalid-values": "reject"
 		},
 		{
+			"scalar-type": "string",
+			"namespace-uri": "",
+			"localname": "language",
+			"collation": "http://marklogic.com/collation/",
+			"range-value-positions": false,
+			"invalid-values": "reject"
+		},
+		{
 			"scalar-type": "int",
 			"namespace-uri": "",
 			"localname": "length",
