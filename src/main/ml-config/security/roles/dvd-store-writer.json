@@ -1,0 +1,6 @@
+{
+	"role-name": "dvd-store-writer",
+	"role": [
+		"rest-writer"
+	]
+}

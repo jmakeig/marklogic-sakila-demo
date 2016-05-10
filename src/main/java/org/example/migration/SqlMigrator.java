@@ -76,7 +76,7 @@ public class SqlMigrator extends LoggingObject {
 	 * @param rootLocalName the local name for the root element in the XML document that's inserted into MarkLogic
 	 * @param collections   optional array of collections to add each document to
 	 */
-	public void migrate(String sql, String rootLocalName, String... collections) {
+	public void migrate(String sql, String rootLocalName, String permissions, String... collections) {
 		initializeDataSource();
 		initializeDatabaseClient();
 

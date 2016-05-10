@@ -21,8 +21,9 @@ public class MigrateActors {
 		// Migrate!
 		String sql = "SELECT * FROM actor";
 		String rootElementName = "actor";
+		String permissions = "dvd-store-reader,read,dvd-store-writer,update";
 		String[] additionalCollections = new String[]{"sakila"};
-		m.migrate(sql, rootElementName, additionalCollections);
+		m.migrate(sql, rootElementName, permissions, additionalCollections);
 	}
 
 

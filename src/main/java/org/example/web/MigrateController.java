@@ -37,7 +37,7 @@ public class MigrateController extends LoggingObject {
 		m.setMlPassword(config.getPassword());
 
 		String[] collections = data.getCollections() != null ? data.getCollections().split(",") : null;
-		m.migrate(data.getSql(), data.getRootLocalName(), collections);
+		m.migrate(data.getSql(), data.getRootLocalName(), "dvd-store-reader,read,dvd-store-writer,update", collections);
 
 		return null;
 	}

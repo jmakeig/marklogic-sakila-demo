@@ -29,7 +29,8 @@ public class MigrateFilmsWithActors {
 			"LEFT JOIN language ON film.language_id = language.language_id \n" +
 			"ORDER BY film.film_id\n";
 		String rootElementName = "film";
+		String permissions = "dvd-store-reader,read,dvd-store-writer,update";
 		String[] additionalCollections = new String[]{"sakila"};
-		m.migrate(sql, rootElementName, additionalCollections);
+		m.migrate(sql, rootElementName, permissions, additionalCollections);
 	}
 }
