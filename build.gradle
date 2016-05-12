@@ -72,3 +72,18 @@ dependencies {
 bootRun {
   addResources = true
 }
+
+task migrateActors(type: JavaExec) {
+	main = 'org.example.migration.MigrateActors'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
+task migrateFilms(type: JavaExec) {
+	main = 'org.example.migration.MigrateFilms'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
+task migrateFilmsWithActors(type: JavaExec) {
+	main = 'org.example.migration.MigrateFilmsWithActors'
+	classpath = sourceSets.main.runtimeClasspath
+}
