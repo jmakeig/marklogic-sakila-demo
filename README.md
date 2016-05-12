@@ -14,9 +14,9 @@ you can get this up and running easily by following these steps
 1. npm install (installs gulp and some other related tools) 
 1. bower install (downloads all the webapp dependencies)
 1. gulp build (builds the webapp)
-1. ./gradlew bootRun (fires up the webapp on Spring Boot on port 8080)
+1. ./gradlew bootRun (fires up the webapp on Spring Boot on port 8088)
 
-You can then migrate via 1 of 2 two ways:
+You can then migrate data via 1 of 2 two ways:
 
 1. Run one of the following Gradle tasks - migrateActors, migrateFilms, or migrateFilmsWithActors - e.g. "./gradlew migrateActors"
 1. Use the "Migrate" tool in the webapp to enter any SQL query that you want
